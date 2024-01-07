@@ -10,7 +10,7 @@ class rand :
         return self.seed / 0x7fffffff
 
     def rand_int(self, a, b) : # random int dar baze [a, b]
-        return int((b + 1 - a) * self.rand() + a)
+        return int(self.rand_float(a, b + 1))
 
     def rand_float(self, a, b) : # random float dar baze [a, b)
         return (b - a) * self.rand() + a
