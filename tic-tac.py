@@ -1,8 +1,9 @@
 import random_gen
 
-def over(game) : # check kardan inke bazi be etmam reside ya na. agar tamam nashode 0 bargardan
-                 # dar gheir in soorat shomare bazikon barande ra bargardan.
-                 # va agar bazi mosavi shode va digar nemitavan harkati kard -1 bargardan
+def over(game) :
+    """check kardan inke bazi be etmam reside ya na. agar tamam nashode 0 bargardan
+        dar gheir in soorat shomare bazikon barande ra bargardan.
+        va agar bazi mosavi shode va digar nemitavan harkati kard -1 bargardan"""
     if (game[0][0] == game[1][1] and game[1][1] == game[2][2] and game[0][0] != 0) : # ghotri
         return game[0][0]
     if (game[0][2] == game[1][1] and game[1][1] == game[2][0] and game[2][0] != 0) :
@@ -34,7 +35,8 @@ def over(game) : # check kardan inke bazi be etmam reside ya na. agar tamam nash
     return 0
 
 
-def print_game(game) : # print kardan safhe bazi
+def print_game(game) :
+    """print kardan safhe bazi"""
     t = 0
     while (t < 3) :
         k = 0
